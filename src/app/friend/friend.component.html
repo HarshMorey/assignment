@@ -1,0 +1,29 @@
+<body>
+<input id="search" size="40" type="search" ng-model="searchString" placeholder="Search by name" />
+
+<div class="container" >
+    <table class="table table-bordered table-striped">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>Firstname</th>
+         <th>Profile Pic</th>
+        <!--<th>Department</th>
+        <th>Email</th>
+        <th>Country</th> -->
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let friend of friends">
+        <td id=friend.id><span>{{friend.id}}</span></td>
+        <td id=friend.id><span><a href="">{{friend.login}}</a></span></td>
+        <td id=friend.id><span><img src="{{friend.avatar_url}}"></span></td>
+        <!--<td><span>{{friend.department}}</span></td>
+        <td><span>{{friend.email}}</span></td>
+        <td><span>{{friend.country}}</span></td> -->
+      </tr>
+      </tbody>
+    </table>
+  </div>
+  
+</body>

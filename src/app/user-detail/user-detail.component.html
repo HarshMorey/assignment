@@ -1,0 +1,40 @@
+<mat-dialog-content>  
+    <mat-toolbar color="accent" style="background-color:darkblue;">  
+  
+User Details  
+</mat-toolbar>  
+    <br>  
+        <table class="table">  
+            <tr>  
+                <th> UserId </th>  
+                <td> {{UserId}} </td>  
+            </tr>  
+            <tr>  
+                <th> User Name </th>  
+                <td> {{UserName}} </td>  
+            </tr>  
+            <tr>  
+                <th> EmailId </th>  
+                <td> {{EmailId}} </td>  
+            </tr>  
+            <tr>  
+                <th> Gender </th>  
+                <td> {{Gender}} </td>  
+            </tr>  
+            <tr>  
+                <th> Address </th>  
+                <td> {{Address}} </td>  
+            </tr>  
+            <tr>  
+                <th> MobileNo </th>  
+                <td> {{MobileNo}} </td>  
+            </tr>  
+            <tr>  
+                <th> PinCode </th>  
+                <td> {{PinCode}} </td>  
+            </tr>  
+        </table>  
+    </mat-dialog-content>  
+    <mat-dialog-actions align="center">  
+        <button class="mat-raised-button btn btn-danger" (click)="close()">Close</button>  
+    </mat-dialog-actions>   
